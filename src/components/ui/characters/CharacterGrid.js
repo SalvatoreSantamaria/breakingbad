@@ -1,12 +1,12 @@
 import React from 'react'
 import CharacterItem from './CharacterItem'
-//import Spinner from '../ui/Spinner'
+import Spinner from '../Spinner'
 
 
-// item below is getting passed into CharacterItem
+// items.map is is passing in item below is getting passed into CharacterItem
 const CharacterGrid = ({ items, isLoading }) => {
   return isLoading ? (
-    <h1>'loading'</h1>
+    <Spinner></Spinner>
   ) : (
     <section className='cards'>
       {items.map((item) => (

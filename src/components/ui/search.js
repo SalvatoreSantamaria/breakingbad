@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+//every piece in the form will have its own piece of state
+
 
 const Search = ({ getQuery }) => {
   const [text, setText] = useState('')
