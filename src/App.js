@@ -13,7 +13,9 @@ function App() {
       const result = await axios(`https://www.breakingbadapi.com/api/characters`)
       console.log(result.data)
     }
-  })
+    fetchItems()
+
+  }, []) //have to add dependencies as a second param
 
   return (
     <div className="container">
