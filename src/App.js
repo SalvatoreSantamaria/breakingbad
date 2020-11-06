@@ -2,11 +2,12 @@ import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import './App.css';
 import Header from './components/ui/Header'
-import CharacterGrid from './components/characters/CharacterGrid'
+import CharacterGrid from './components/ui/characters/CharacterGrid'
+
 
 function App() {
   //items comes from API, setItems is to change the state. 
-  const [item, setItems] = useState([])
+  const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
